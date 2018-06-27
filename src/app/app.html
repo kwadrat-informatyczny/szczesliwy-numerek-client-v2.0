@@ -1,0 +1,20 @@
+<ion-menu [content]="content">
+  <ion-header class="headd">
+    <ion-toolbar color="greeny" class="side-menu-nav">
+      <img style="width: 100%;" src="../assets/imgs/side-menu-background.png">
+      <img style="width: 50px; position: absolute; top: 30px; left: 20px;" src="../assets/imgs/logo-empty.png">
+      <ion-title style="position: absolute; top: 40px; left: 70px;">Numerek</ion-title>
+      <p style="position: absolute; top: 65px; left: 83px; font-size: 15px; color: black;">Aplikacja dla szkół</p>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

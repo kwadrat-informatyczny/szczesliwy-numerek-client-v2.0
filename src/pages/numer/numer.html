@@ -1,0 +1,38 @@
+<!--
+  Generated template for the NumerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="greeny" class="nav">
+    <button ion-button menuToggle>
+      <ion-icon class="menu" name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <span class="school-name">ZS 1 Bochnia</span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main">
+  <div class="container">
+    <div class="number-block">
+      <p class="text1">Numerek niepytany na</p>
+      <p class="text1">dzisiaj:</p>
+      <p class="random-number">5</p>
+      <p class="date">Poniedziałek : 23-23-2018</p>
+    </div>
+
+    <div class="refresh-div">
+      <button (click)="reload()" style="background: 0;">
+        <ion-img width="50px" height="50px" class="refresh" src="../assets/imgs/refresh-image.png"></ion-img>
+      </button>
+    </div>
+
+    <div class="timer">
+      <p class="text2">Następne losowanie numerka za:</p>
+      <p class="text2">14h : 53m : 42s</p>
+    </div>
+  </div>
+</ion-content>
