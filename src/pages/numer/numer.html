@@ -10,7 +10,7 @@
       <ion-icon class="menu" name="menu"></ion-icon>
     </button>
     <ion-title>
-      <span class="school-name">ZS 1 Bochnia</span>
+      <span class="school-name">{{school_name}}</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -20,19 +20,20 @@
     <div class="number-block">
       <p class="text1">Numerek niepytany na</p>
       <p class="text1">dzisiaj:</p>
-      <p class="random-number">5</p>
-      <p class="date">Poniedziałek : 23-23-2018</p>
+      <p class="random-number">{{numerek}}</p>
+      <p class="date">{{when}}</p>
     </div>
 
     <div class="refresh-div">
       <button (click)="reload()" style="background: 0;">
-        <ion-img width="50px" height="50px" class="refresh" src="../assets/imgs/refresh-image.png"></ion-img>
+        <ion-img style="width: 48px; height: 48px; background: transparent
+          !important;" src="./assets/imgs/refresh-image.png"></ion-img>
       </button>
     </div>
 
     <div class="timer">
       <p class="text2">Następne losowanie numerka za:</p>
-      <p class="text2">14h : 53m : 42s</p>
+      <p class="text2">{{odliczanie}}</p>
     </div>
   </div>
 </ion-content>

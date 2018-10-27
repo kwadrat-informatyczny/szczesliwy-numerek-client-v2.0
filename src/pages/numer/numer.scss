@@ -1,3 +1,57 @@
-page-numer {
+.school-name {
+  margin:auto;
+  color: #FFFFFF;
+}
 
+.number-block {
+	width: 250px;
+	height: 250px;
+	margin: auto;
+  background: #FFFFFF;
+	box-shadow: 1px 1px 2px 1px #999999;
+  box-sizing: border-box;
+  border-radius: 3px;
+	position: relative;
+	top: 30px;
+}
+
+.text1 {
+	text-align: center;
+	font-size: 20px;
+    padding-top: 5px;
+}
+
+.text2 {
+	font-size: 20px;
+	text-align: center;
+}
+
+.random-number {
+  height: 150px;
+	font-size: 150px;
+	text-align: center;
+  position: relative;
+  top: -10px;
+  color: #26a92a;
+}
+.date {
+	text-align: center;
+	font-size: 20px;
+  padding-top: 10px;
+}
+.refresh-div {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  position: relative;
+  top: 60px;
+}
+
+.refresh {
+  background: transparent !important;
+}
+
+.timer {
+	position: relative;
+	top: 90px;
 }
