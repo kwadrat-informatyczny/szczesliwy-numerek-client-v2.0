@@ -3,7 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { HomePage } from '../pages/home/home';
+//import { HomePage } from '../pages/home/home';
 import { NumerPage } from '../pages/numer/numer';
 //import { ZastepstwaPage } from '../pages/zastepstwa/zastepstwa';
 
@@ -13,7 +13,7 @@ import { NumerPage } from '../pages/numer/numer';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = NumerPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -22,7 +22,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Strona główna', component: HomePage },
+      //{ title: 'Strona główna', component: HomePage },
       { title: 'Numerek niepytany', component: NumerPage }
       //{ title: 'Zastępstwa', component: ZastepstwaPage }
     ];
