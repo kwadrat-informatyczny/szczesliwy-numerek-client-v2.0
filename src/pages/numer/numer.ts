@@ -48,13 +48,13 @@ export class NumerPage {
 
     var do_losowania = Math.floor(this.czas_losowania - teraz);
 
-    var godzin = Math.floor(do_losowania / 3600);
-    if(godzin < 10) godzin = "0" + godzin;
-    do_losowania = do_losowania - godzin * 3600;
-    var minut = Math.floor(do_losowania / 60);
-    if(minut < 10) minut = "0" + minut;
-    var sekund = do_losowania - minut * 60;
-    if(sekund < 10) sekund = "0" + sekund;
+    var godzin = (Math.floor(do_losowania / 3600)).toString();
+    if(godzin.length < 2) godzin = "0" + godzin;
+    do_losowania = do_losowania - +godzin * 3600;
+    var minut = (Math.floor(do_losowania / 60)).toString();
+    if(minut.length < 2) minut = "0" + minut;
+    var sekund = (do_losowania - +minut * 60).toString();
+    if(sekund.length < 2) sekund = "0" + sekund;
 
     return godzin + "h : " + minut + "m : " + sekund + "s";
   }
